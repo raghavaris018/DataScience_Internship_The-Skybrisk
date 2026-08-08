@@ -1,18 +1,14 @@
 a=int(input("Enter First number:"))
 b=int(input("ENter Secound number:"))
-z=0
-print(" Enter A for Add, S for Sub, M for Mult, D for Div ")
-n=input("Enter letter:")
-if n=="A":
-    z=a+b
-    print(z)
-elif n=="S":
-    z=a-b
-    print(z)
-elif n=="M":
-    z=a*b
-    print(z)
+operator=input("Enter Operator:")
+if operator=="+":
+    print(f"Addition of two numbers:{a+b}")
+elif operator=="-":
+    print(f"Subtraction of two numbers:{a-b}")
+elif operator=="*":
+    print(f"Multiplication of two numbers:{a*b}")
+elif operator=="/":
+    print(f"Division of two numbers:{a/b}")
 else:
-    z=a/b
-    print(z)
+    print("invalid Operator")
     
